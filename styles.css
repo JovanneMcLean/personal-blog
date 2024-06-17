@@ -1,0 +1,148 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.left-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  border-right: 2px solid #000;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, #FFCC33, #FF9900);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+.right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 400px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+#error-message {
+  color: red;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #000;
+}
+
+header button {
+  padding: 10px;
+  font-size: 16px;
+}
+
+main {
+  padding: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-top: 1px solid #000;
+}
+
+#posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode header, 
+body.dark-mode footer {
+  background-color: #444;
+}
+
+body.dark-mode .container {
+  background-color: #444;
+}
+
+body.dark-mode .left-panel {
+  background-color: #555;
+}
+
+body.dark-mode .right-panel {
+  background-color: #444;
+}
+
+body.dark-mode input, 
+body.dark-mode textarea {
+  background-color: #555;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+body.dark-mode input[type="submit"] {
+  background-color: #666;
+  color: #fff;
+}
+
+body.dark-mode input[type="submit"]:hover {
+  background-color: #888;
+}
