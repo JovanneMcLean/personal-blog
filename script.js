@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('blogPosts', JSON.stringify(posts));
 
             showPostsSection();
+            form.reset(); // Clear form fields
             errorMessage.textContent = ''; // Clear error message
         });
     }
@@ -68,6 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formSection.style.display = 'flex';
         postsSection.style.display = 'none';
         backButton.style.display = 'none';
+        loadPosts(); // Load posts in case new posts were added while viewing posts
     }
 
     // Show posts section
@@ -75,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
         formSection.style.display = 'none';
         postsSection.style.display = 'block';
         backButton.style.display = 'inline-block';
-        loadPosts();
+        loadPosts(); // Reload posts to display the new post immediately
     }
 
     // Initial call to load posts

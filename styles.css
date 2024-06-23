@@ -109,6 +109,7 @@ footer {
   gap: 20px;
 }
 
+/* Dark mode styles */
 body.dark-mode {
   background-color: #333;
   color: #fff;
